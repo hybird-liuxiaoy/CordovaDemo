@@ -1,0 +1,9 @@
+.idea
+node_modules
+
+.gradle
+*.iml
+build/
+
+platforms/
+plugins/
