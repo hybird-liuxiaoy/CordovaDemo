@@ -31,4 +31,5 @@
         <variable name="XWALK_MULTIPLEAPK" value="true" />
     </plugin>
     <engine name="android" spec="7.1.1" />
+    <plugin name="cordova-plugin-camera" spec="^4.0.3" />
 </widget>
