@@ -1,10 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import dva from 'dva'
 import './index.css';
-import App from './App';
+import 'antd-mobile/dist/antd-mobile.css'
+import router from './router'
 
 const startApp = () => {
-    ReactDOM.render(<App />, document.getElementById('root'));
+    const app = dva();
+    // app.model(require('./models/').default);
+    app.router(router);
+    app.start("#root");
 };
 if(!window.cordova) {
     startApp();
