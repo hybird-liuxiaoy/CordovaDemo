@@ -1,23 +1,20 @@
 import React from 'react'
 import home from './logo.svg'
 import PropTypes from 'prop-types';
-import { Route, withRouter, Switch, Redirect } from 'dva/router'
+import { Route, withRouter, RouteComponentProps } from 'dva/router'
 import { TabBar, Icon } from 'antd-mobile';
 import _ from 'lodash'
 
 import './App.css'
 
-class App extends React.Component {
+class App extends React.Component<RouteComponentProps> {
     static contextTypes = {
         router: PropTypes.object
-    }
-
-    push = path => () => this.context.router.history.push(path)
+    };
+    push = (path: string) => () => this.context.router.history.push(path);
 
     render() {
-
-        const { location } = this.props
-
+        const { location } = this.props;
         let currentPath, p = location.pathname;
         if (
             p === '/'

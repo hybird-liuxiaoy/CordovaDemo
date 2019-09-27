@@ -1,4 +1,3 @@
-import React from 'react';
 import dva from 'dva'
 import './index.css';
 import 'antd-mobile/dist/antd-mobile.css'
@@ -10,6 +9,11 @@ const startApp = () => {
     app.router(router);
     app.start("#root");
 };
+
+declare global {
+    interface Window { cordova: any; }
+}
+
 if(!window.cordova) {
     startApp();
 } else {
