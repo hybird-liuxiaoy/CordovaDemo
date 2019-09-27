@@ -1,13 +1,15 @@
-import dva from 'dva'
-import './index.css';
-import 'antd-mobile/dist/antd-mobile.css'
-import router from './router'
+import React from 'react';
+import ReactDOM from  'react-dom';
+import Framework7 from 'framework7/framework7.esm.bundle';
+import Framework7React from 'framework7-react';
+import App from './app';
+
+import 'framework7/css/framework7.min.css';
+
+Framework7.use(Framework7React);
 
 const startApp = () => {
-    const app = dva();
-    // app.model(require('./models/').default);
-    app.router(router);
-    app.start("#root");
+    ReactDOM.render(React.createElement(App), document.getElementById('root'));
 };
 
 declare global {

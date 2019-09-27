@@ -1,8 +1,19 @@
 import React from 'react';
 import { App, Navbar, Page, View, Statusbar, PhotoBrowser, Block, Row, Col, Button } from 'framework7-react';
 
-class A extends React.Component {
-    constructor(props) {
+declare interface Props {}
+declare interface State {
+    photos: any
+}
+
+class A extends React.Component<Props, State> {
+    private standalone: any;
+    private standaloneDark: any;
+    private page: any;
+    private pageDark: any;
+    private popup: any;
+    private popupDark: any;
+    constructor(props: any) {
         super(props);
         this.state = {
             photos: [
