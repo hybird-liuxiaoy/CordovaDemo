@@ -85,7 +85,7 @@
       "cordova-plugin-qrscanner": {},
       "cordova-plugin-inappbrowser": {},
       "cordova-plugin-abi-filter": {
-        "ABI_FILTER": "armeabi-v7a"
+        "ABI_FILTER": "armeabi-v7a,arm64-v8a,x86,x86_64"
       },
       "cordova-plugin-bluetooth": {}
     },
