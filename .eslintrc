@@ -62,7 +62,7 @@
         "allowTaggedTemplates": false
       }
     ],
-    "no-unused-vars": "error",
+    "no-unused-vars": "warn",
     "no-use-before-define": [0],
     "operator-assignment": ["warn"],
     "prefer-arrow-callback": [
