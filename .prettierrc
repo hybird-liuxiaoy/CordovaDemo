@@ -8,7 +8,7 @@
   "bracketSpacing": true,
   "jsxBracketSameLine": false,
   "arrowParens": "avoid",
-  "parser": "babylon",
+  "parser": "babel",
   "filepath": "None",
   "requirePragma": false,
   "insertPragma": false,
