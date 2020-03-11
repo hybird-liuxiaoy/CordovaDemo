@@ -5,6 +5,5 @@
 /www/
 /public/
 
-/package.json
 /package-lock.json
 /yarn.lock
