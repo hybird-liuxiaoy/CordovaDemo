@@ -12,5 +12,6 @@ exports = module.exports;
 // eslint-disable-next-line no-shadow
 exports.paths = function paths(paths, env) {
   paths.appBuild = path.resolve(__dirname, 'www');
+  paths.servedPath = './';
   return paths;
 };
