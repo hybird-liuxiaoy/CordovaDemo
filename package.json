@@ -31,7 +31,7 @@
     "cordova-android": "8.1.0",
     "cordova-ios": "5.0.1",
     "dva": "^2.3.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "react": "16.9.0",
     "react-dom": "16.9.0",
     "react-scripts": "3.1.2"
